@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Example App</title>
+</head>
+
+<body>
+    <script>
+        function onSearchClick() {
+            var selo = document.getElementById("selishteData").value;
+            if (selo != "")
+                window.location.href = "/view-data/" + selo;
+        }
+                function getStats() {
+                window.location.href = "/stats";
+        }
+    </script>
+
+    <div>
+        <input type="text" name="selishteData" id="selishteData"><br>
+        <button type="button" onclick="onSearchClick()">Search</button>
+        <button type="button" onclick="getStats()">Stats</button>
+    </div>
+    {{{body}}}
+
+</body>
+
+</html>

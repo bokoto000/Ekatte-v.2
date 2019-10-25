@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS oblasti (
-    id SERIAL UNIQUE,
+    id SERIAL UNIQUE PRIMARY KEY,
     oblast character varying NOT NULL UNIQUE,
     ekatte character varying NOT NULL,
     document character varying NOT NULL,
@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS oblasti (
 );
 
 CREATE TABLE IF NOT EXISTS obstini (
-    id SERIAL UNIQUE,
+    id SERIAL UNIQUE PRIMARY KEY,
     obstina character varying NOT NULL UNIQUE,
     ekatte character varying NOT NULL,
     document character varying NOT NULL,
